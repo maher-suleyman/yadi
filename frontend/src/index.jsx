@@ -16,6 +16,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import HomerScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
+import ProfileScreen from "./screens/ProfileScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,7 +26,7 @@ const router = createBrowserRouter(
       <Route path="/register" element={<RegisterScreen />} />
       {/* Private Routes */}
       <Route path="" element={<PrivateRoute />}>
-        {/* Private routes goes Here such as "Profile"... */}
+        <Route path="/profile" element={<ProfileScreen />} />
       </Route>
     </Route>
   )
