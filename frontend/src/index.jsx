@@ -12,6 +12,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import PrivateRoute from "./components/PrivateRoute";
 import HomerScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
@@ -22,6 +23,10 @@ const router = createBrowserRouter(
       <Route index={true} path="/" element={<HomerScreen />} />
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />
+      {/* Private Routes */}
+      <Route path="" element={<PrivateRoute />}>
+        {/* Private routes goes Here such as "Profile"... */}
+      </Route>
     </Route>
   )
 );
