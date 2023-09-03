@@ -15,7 +15,7 @@ const ProfileScreen = () => {
 
   const dispatch = useDispatch();
 
-  const [updateProfile, { isLoading, error }] = useUpdateUserMutation();
+  const [updateProfile, { isLoading }] = useUpdateUserMutation();
 
   const { userInfo } = useSelector((state) => state.auth);
 
