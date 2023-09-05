@@ -1,1 +1,5 @@
+# Redirect API requests to the API URL
+/api/* https://yadi-toolbox.cyclic.app/:splat 200
+
+# All other routes serve the React app
 /* /index.html 200
